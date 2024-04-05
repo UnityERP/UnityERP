@@ -2,8 +2,8 @@
   {
     "title": "Website",
     "description": "Build professional business websites effortlessly.",
-    "tier1": "0",
-    "tier2": "1",
+    "tier1": "1",
+    "tier2": "0",
     "tier3": "1",
     "tier4": "1"
   },
@@ -12,39 +12,39 @@
     "description": "Effortlessly sell products online with our comprehensive eCommerce solution.",
     "tier1": "0",
     "tier2": "1",
-    "tier3": "1",
+    "tier3": "0",
     "tier4": "1"
   },
   {
     "title": "eLearning",
     "description": "Create and publish engaging courses for your learners with our intuitive eLearning platform.",
-    "tier1": "0",
+    "tier1": "1",
     "tier2": "1",
     "tier3": "1",
-    "tier4": "1"
+    "tier4": "0"
   },
   {
     "title": "CRM",
     "description": "Efficiently manage your leads and close more deals with our powerful CRM system.",
-    "tier1": "0",
+    "tier1": "1",
     "tier2": "1",
-    "tier3": "1",
-    "tier4": "1"
+    "tier3": "0",
+    "tier4": "0"
   },
   {
     "title": "Sales",
     "description": "Streamline your sales process from quotations to invoices with our integrated solution.",
-    "tier1": "0",
-    "tier2": "1",
+    "tier1": "1",
+    "tier2": "0",
     "tier3": "1",
     "tier4": "1"
   },
   {
     "title": "Point of Sale",
     "description": "Easily manage sales transactions in your shop or restaurant with our POS interface.",
-    "tier1": "0",
+    "tier1": "1",
     "tier2": "1",
-    "tier3": "1",
+    "tier3": "0",
     "tier4": "1"
   },
   {
@@ -53,15 +53,15 @@
     "tier1": "0",
     "tier2": "1",
     "tier3": "1",
-    "tier4": "1"
+    "tier4": "0"
   },
   {
     "title": "Invoicing",
     "description": "Simplify your invoicing process and manage payments seamlessly.",
-    "tier1": "0",
-    "tier2": "1",
+    "tier1": "1",
+    "tier2": "0",
     "tier3": "1",
-    "tier4": "1"
+    "tier4": "0"
   },
   {
     "title": "Expenses",
@@ -69,38 +69,38 @@
     "tier1": "0",
     "tier2": "1",
     "tier3": "1",
-    "tier4": "1"
+    "tier4": "0"
   },
   {
     "title": "Documents",
     "description": "Effortlessly manage and organize your documents with our document management system.",
-    "tier1": "0",
-    "tier2": "1",
-    "tier3": "1",
+    "tier1": "1",
+    "tier2": "0",
+    "tier3": "0",
     "tier4": "1"
   },
   {
     "title": "Inventory",
     "description": "Efficiently manage your stock and logistics activities with our inventory management system.",
-    "tier1": "0",
+    "tier1": "1",
     "tier2": "1",
-    "tier3": "1",
+    "tier3": "0",
     "tier4": "1"
   },
   {
     "title": "Manufacturing",
     "description": "Streamline manufacturing orders and bill of materials with our comprehensive solution.",
     "tier1": "0",
-    "tier2": "1",
+    "tier2": "0",
     "tier3": "1",
     "tier4": "1"
   },
   {
     "title": "Purchase",
     "description": "Streamline purchase orders, tenders, and agreements with our integrated solution.",
-    "tier1": "0",
-    "tier2": "1",
-    "tier3": "1",
+    "tier1": "1",
+    "tier2": "0",
+    "tier3": "0",
     "tier4": "1"
   },
   {
@@ -109,6 +109,6 @@
     "tier1": "0",
     "tier2": "1",
     "tier3": "1",
-    "tier4": "1"
+    "tier4": "0"
   }
 ]
