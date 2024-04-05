@@ -2,71 +2,113 @@
   {
     "title": "Website",
     "description": "Build professional business websites effortlessly.",
-    "icon": "https://OKU-suite.com/website_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "eCommerce",
     "description": "Effortlessly sell products online with our comprehensive eCommerce solution.",
-    "icon": "https://OKU-suite.com/ecommerce_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "eLearning",
     "description": "Create and publish engaging courses for your learners with our intuitive eLearning platform.",
-    "icon": "https://OKU-suite.com/elearning_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "CRM",
     "description": "Efficiently manage your leads and close more deals with our powerful CRM system.",
-    "icon": "https://OKU-suite.com/crm_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "Sales",
     "description": "Streamline your sales process from quotations to invoices with our integrated solution.",
-    "icon": "https://OKU-suite.com/sales_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "Point of Sale",
     "description": "Easily manage sales transactions in your shop or restaurant with our POS interface.",
-    "icon": "https://OKU-suite.com/pos_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "Accounting",
     "description": "Efficiently manage financial and analytic accounting with our comprehensive system.",
-    "icon": "https://OKU-suite.com/accounting_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "Invoicing",
     "description": "Simplify your invoicing process and manage payments seamlessly.",
-    "icon": "https://OKU-suite.com/invoicing_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "Expenses",
     "description": "Streamline and manage employee expenses effortlessly.",
-    "icon": "https://OKU-suite.com/expenses_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "Documents",
     "description": "Effortlessly manage and organize your documents with our document management system.",
-    "icon": "https://OKU-suite.com/documents_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "Inventory",
     "description": "Efficiently manage your stock and logistics activities with our inventory management system.",
-    "icon": "https://OKU-suite.com/inventory_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "Manufacturing",
     "description": "Streamline manufacturing orders and bill of materials with our comprehensive solution.",
-    "icon": "https://OKU-suite.com/manufacturing_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "Purchase",
     "description": "Streamline purchase orders, tenders, and agreements with our integrated solution.",
-    "icon": "https://OKU-suite.com/purchase_icon.png"
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   },
   {
     "title": "Employees",
-    "description": "Centrally manage employee information and streamline HR processes.",
-    "icon": "https://OKU-suite.com/employees_icon.png"
+    "description": "manage employee information and streamline HR processes.",
+    "tier1": "0",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1"
   }
 ]
