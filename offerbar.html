@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sale Countdown Timer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Include Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div
+      class="countdown-bar flex flex-wrap items-center justify-between top sticky visible bg-white shadow-md p-4"
+    >
+      <div class="bar-text text-lg font-semibold mb-4 md:mb-0">
+        Special Offer: Get 50% Off Our Premium Software Suite!
+      </div>
+      <div class="countdown flex items-center text-lg">
+        <!-- <p class="mr-4">Sale ends in</p> -->
+        <div class="countdown-wrapper flex">
+          <div class="flip-unit-wrapper mr-4">
+            <div class="flip-unit flex flex-col items-center">
+              <div
+                class="upper-card bg-gray-800 text-white py-2 px-4 rounded-full mb-1"
+              >
+                <span id="days"></span>
+              </div>
+              <div
+                class="flip-card fold bg-gray-800 text-white py-2 px-4 rounded-full mb-1"
+              >
+                <span>DAY</span>
+              </div>
+            </div>
+          </div>
+          <div class="flip-unit-wrapper mr-4">
+            <div class="flip-unit flex flex-col items-center">
+              <div
+                class="upper-card bg-gray-800 text-white py-2 px-4 rounded-full mb-1"
+              >
+                <span id="hours"></span>
+              </div>
+              <div
+                class="flip-card fold bg-gray-800 text-white py-2 px-4 rounded-full mb-1"
+              >
+                <span>HRS</span>
+              </div>
+            </div>
+          </div>
+          <div class="flip-unit-wrapper mr-4">
+            <div class="flip-unit flex flex-col items-center">
+              <div
+                class="upper-card bg-gray-800 text-white py-2 px-4 rounded-full mb-1"
+              >
+                <span id="minutes"></span>
+              </div>
+              <div
+                class="flip-card fold bg-gray-800 text-white py-2 px-4 rounded-full mb-1"
+              >
+                <span>MIN</span>
+              </div>
+            </div>
+          </div>
+          <div class="flip-unit-wrapper">
+            <div class="flip-unit flex flex-col items-center">
+              <div
+                class="upper-card bg-gray-800 text-white py-2 px-4 rounded-full mb-1"
+              >
+                <span id="seconds"></span>
+              </div>
+              <div
+                class="flip-card fold bg-gray-800 text-white py-2 px-4 rounded-full mb-1"
+              >
+                <span>SEC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function updateCountdown() {
+        const targetEndTime = localStorage.getItem("saleEndTime");
+        if (!targetEndTime) {
+          // Set the target date/time for the end of the sale (4 hours from now) if not set already
+          const targetDate = new Date();
+          targetDate.setHours(targetDate.getHours() + 4);
+          localStorage.setItem("saleEndTime", targetDate.getTime());
+        }
+
+        const now = new Date();
+        const endTime = new Date(parseInt(localStorage.getItem("saleEndTime")));
+
+        const timeDifference = endTime - now;
+
+        // Calculate remaining time
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        // Update the countdown elements
+        document.getElementById("days").innerText =
+          days < 10 ? "0" + days : days;
+        document.getElementById("hours").innerText =
+          hours < 10 ? "0" + hours : hours;
+        document.getElementById("minutes").innerText =
+          minutes < 10 ? "0" + minutes : minutes;
+        document.getElementById("seconds").innerText =
+          seconds < 10 ? "0" + seconds : seconds;
+
+        // If the timer reaches zero, display a message and stop the timer
+        if (timeDifference <= 0) {
+          clearInterval(timerInterval);
+          document.getElementById("countdown").innerText = "Sale has ended!";
+          localStorage.removeItem("saleEndTime"); // Clear the end time from localStorage
+        }
+      }
+
+      // Initial call to update the countdown
+      updateCountdown();
+
+      // Update the countdown every second
+      const timerInterval = setInterval(updateCountdown, 1000);
+    </script>
+  </body>
+</html>

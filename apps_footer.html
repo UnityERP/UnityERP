@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-gray-100">
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Footer Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-8">
+          <!-- Each Footer Column -->
+          <div class="footer-column">
+            <ul>
+              <!-- JavaScript will populate this section -->
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <ul>
+              <!-- JavaScript will populate this section -->
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <ul>
+              <!-- JavaScript will populate this section -->
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <ul>
+              <!-- JavaScript will populate this section -->
+            </ul>
+          </div>
+        </div>
+        <!-- /Footer Container -->
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- JavaScript to fetch and populate footer data -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("apps.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const footerColumns = document.querySelectorAll(".footer-column");
+            data.forEach((app) => {
+              const column = document.createElement("div");
+              column.classList.add("footer-column");
+              const titleContainer = document.createElement("div"); // Container for the title and icon
+              titleContainer.classList.add("flex", "items-center", "mb-4"); // Flex container to align items horizontally
+
+              const icon = document.createElement("img");
+              icon.src = "app.png";
+              icon.alt = app.title + " Icon";
+              icon.classList.add("w-6", "h-6", "mr-2");
+              titleContainer.appendChild(icon); // Append the icon first
+
+              const title = document.createElement("h3");
+              title.textContent = app.title;
+              title.classList.add("text-lg", "font-semibold");
+              titleContainer.appendChild(title); // Append the title after the icon
+
+              const ul = document.createElement("ul");
+              const li = document.createElement("li");
+              const link = document.createElement("a");
+              link.href = "#"; // Add your link here
+              li.appendChild(link);
+              ul.appendChild(li);
+              column.appendChild(titleContainer); // Append the title container
+              column.appendChild(ul);
+              footerColumns[
+                Math.floor(Math.random() * footerColumns.length)
+              ].appendChild(column);
+            });
+          })
+          .catch((error) => console.error("Error fetching data:", error));
+      });
+    </script>
+  </body>
+</html>
