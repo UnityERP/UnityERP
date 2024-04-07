@@ -1,663 +1,737 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UnityERP Suite - Your ERP Solution</title>
-    <link rel="icon" href="icon.png" type="image/png" />
-    <!-- Tailwind CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body class=" px-4 pt-12">
-       <div
-      class="countdown-bar flex flex-wrap items-center justify-between top sticky visible bg-yellow-500 rounded-full m-8 shadow-md p-4"
-    >
-      <div>
-       
-                <span class="bar-text text-lg font-semibold mb-4 md:mb-0" >  Special Offer: </span>
-                <span class="bar-text text-2xl font-semibold mb-4 md:mb-0" >  Get  </span>
-                <span class="text-4xl font-bold text-gray-800" >   40%  </span>
-                <span class="bar-text text-2xl text-gray-800 font-semibold mb-4 " >   Off </span>
-                <span class="bar-text text-lg font-semibold mb-4 md:mb-0" >  Our Software!</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UnityERP Suite - Your ERP Solution</title>
+  <link rel="icon" href="icon.png" type="image/png" />
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
 
-      </div>
-      <div id="countdown" class="countdown flex items-center text-lg">
-        <!-- <p class="mr-4">Sale ends in</p> -->
-        <div class="countdown-wrapper flex">
-          <div class="flip-unit-wrapper m2">
-            <div class="flip-unit flex flex-col items-center">
-              <div
-                class="upper-card bg-white-100 border-4 text-black py-2 px-4 rounded-full mb-1"
-              >
-                <span id="days"></span>
-              </div>
-            
-            </div>
-          </div>
-          <div class="flip-unit-wrapper mr-4">
-            <div class="flip-unit flex flex-col items-center">
-              <div
-                class="upper-card bg-white-100 border-4 text-black py-2 px-4 rounded-full mb-1"
-              >
-                <span id="hours"></span>
-              </div>
-      
-            </div>
-          </div>
-          <div class="flip-unit-wrapper mr-4">
-            <div class="flip-unit flex flex-col items-center">
-              <div
-                class="upper-card bg-white-100 border-4 text-black py-2 px-4 rounded-full mb-1"
-              >
-                <span id="minutes"></span>
-              </div>
-           
-            </div>
-          </div>
-          <div class="flip-unit-wrapper">
-            <div class="flip-unit flex flex-col items-center">
-              <div
-                class="upper-card bg-white-100 border-4 text-white py-2 px-4 rounded-full mb-1 animate-bounce bg-indigo-700"
-              >
-                <span id="seconds" class=""></span>
-              </div>
-        
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<body class="px-12">
+  <div
+    class="countdown-bar flex flex-wrap items-center justify-between top sticky visible bg-yellow-500 rounded-full m-8 shadow-md p-4">
+    <div>
+
+      <span class="bar-text text-lg font-semibold mb-4 md:mb-0"> Special Offer: </span>
+      <span class="bar-text text-2xl font-semibold mb-4 md:mb-0"> Get </span>
+      <span class="text-4xl font-bold text-gray-800"> 40% </span>
+      <span class="bar-text text-2xl text-gray-800 font-semibold mb-4 "> Off </span>
+      <span class="bar-text text-lg font-semibold mb-4 md:mb-0"> Our Software!</span>
+
     </div>
-
-
-    <div class="flex bg-indigo-900 gap-24 p-4 rounded text-center items-center justify-center flex-col" >
-
-      <div>
-        <ul class="pt-12 mx-auto flex justify-between items-center flex items-center">
-          <li class="m-4">
-            <a
-              href="#"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0"
-              >Home</a
-            >
-          </li>
-          <li class="m-4">
-            <a
-              href="#about"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0"
-              >About</a
-            >
-          </li>
-          <li class="m-4">
-            <a
-              href="#features"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0"
-              >Features</a
-            >
-          </li>
-          <li class="m-4">
-            <a
-              href="#pricing"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0"
-              >Pricing</a
-            >
-          </li>
-          <li class="m-4">
-            <a
-              href="#contact"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0"
-              >Contact</a
-            >
-          </li>
-          <li class="m-4">
-            <a
-              href="download.html"
-              class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0"
-              >Download</a
-            >
-          </li>
-        </ul>
-      </div>
-
-        <div class="flex justify-center items-center flex-row text-4xl font-bold  text-white  gap-5 w-full inline-block m-8" >
-            <img src="icon.png" alt="Icon" style="height: 84px; width: 84px" />
-            <h1 class="text-6xl font-bold">UnityERP Solution</h1>
-        </div>
-
-
-      <div class="flex justify-center items-center flex-col text-2xl  p-12  text-white  ">
-          UnityERP Suite is designed to streamline and optimize business operations.
-          With a comprehensive suite of features, UnityERP Suite empowers
-          organizations to manage their finances, human resources, customer
-          relationships, and more.
-        </div>
-
-</div>
-    <!-- galary -->
-    <section>
-<div class="bg-white py-16">
-    <div class="">
-        <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
-            <div class="flex items-center gap-12">
-                <h2 class="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white">Gallery</h2>
-
-                <p class="hidden max-w-screen-sm text-gray-500 dark:text-gray-300 md:block">
-                    This is a section of some simple filler text,
-                    also known as placeholder text. It shares some characteristics of a real written text.
-                </p>
+    <div id="countdown" class="countdown flex items-center text-lg">
+      <!-- <p class="mr-4">Sale ends in</p> -->
+      <div class="countdown-wrapper flex">
+        <div class="flip-unit-wrapper m2">
+          <div class="flip-unit flex flex-col items-center">
+            <div class="upper-card bg-white-100 border-4 text-black py-2 px-4 rounded-full mb-1">
+              <span id="days"></span>
             </div>
 
-            <a href="#"
-                class="inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
-                More
-            </a>
+          </div>
         </div>
+        <div class="flip-unit-wrapper mr-4">
+          <div class="flip-unit flex flex-col items-center">
+            <div class="upper-card bg-white-100 border-4 text-black py-2 px-4 rounded-full mb-1">
+              <span id="hours"></span>
+            </div>
 
-        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-            <!-- image - start -->
-            <a href="#"
-                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Minh Pham" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                <div
-                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                </div>
-
-                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">VR</span>
-            </a>
-            <!-- image - end -->
-
-            <!-- image - start -->
-            <a href="#"
-                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                <img src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Magicle" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                <div
-                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                </div>
-
-                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tech</span>
-            </a>
-            <!-- image - end -->
-
-            <!-- image - start -->
-            <a href="#"
-                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-                <img src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000" loading="lazy" alt="Photo by Martin Sanchez" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                <div
-                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                </div>
-
-                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dev</span>
-            </a>
-            <!-- image - end -->
-
-            <!-- image - start -->
-            <a href="#"
-                class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
-                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600" loading="lazy" alt="Photo by Lorenzo Herrera" class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-
-                <div
-                    class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
-                </div>
-
-                <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
-            </a>
-            <!-- image - end -->
+          </div>
         </div>
-    </div>
-</div>
-    </section>
+        <div class="flip-unit-wrapper mr-4">
+          <div class="flip-unit flex flex-col items-center">
+            <div class="upper-card bg-white-100 border-4 text-black py-2 px-4 rounded-full mb-1">
+              <span id="minutes"></span>
+            </div>
 
-    <!-- Features Section -->
-    <section id="features_" class=" bg-indigo-900 apps_grid rounded-lg mt-10 p-10 grid grid-cols-1 gap-8  grid-cols-5">
-          <!-- Cards will be inserted here dynamically -->
+          </div>
         </div>
- 
-    </section>
+        <div class="flip-unit-wrapper">
+          <div class="flip-unit flex flex-col items-center">
+            <div
+              class="upper-card bg-white-100 border-4 text-white py-2 px-4 rounded-full mb-1 animate-bounce bg-indigo-700">
+              <span id="seconds" class=""></span>
+            </div>
 
-    <!-- Pricing Section -->
-
-
-
-     <section id="pricing" class="text-gray-700 body-font overflow-hidden border-t py-16 border-gray-200">
-  <div class="container px-5 py-16 mx-auto flex flex-wrap">
-    <div class="lg:w-1/5 mt-48 hidden lg:block">
-      <div id="features" class=" mt-px border-t border-gray-300 border-b border-l rounded-tl-lg rounded-bl-lg overflow-hidden">
-        <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start -mt-px">feature 1</p>
-        <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">feature 2</p>
-        <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Android App</p>
-                <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Web Browser</p>
-        <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Connections</p>
-        <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Local Network</p>
-        <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Public Network</p>
-        <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Cloud</p>
-        <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Backup</p>
-        <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Applications</p>
-        <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Accounting</p>
-        <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Inventory</p>
-                <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Sales</p>
-        <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Point of Sale</p>
-                <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Expenses</p>
-        <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Feature 2</p>
-                        <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Expenses</p>
-        <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Feature 2</p>
-
-      </div>
-    </div>
-    <div class="flex lg:w-3/4 w-full  lg:border border-gray-300 rounded-lg">
-      <div id="tier1" class="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
-        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-          <h3 class="tracking-widest">CORE</h3>
-          <h2 class="text-5xl text-gray-900 font-medium leading-none mb-4 mt-2">$999</h2>
-          <span class="text-sm text-gray-600">One-Time Payment</span>
+          </div>
         </div>
-        <p class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">text123</p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="h-12 text-gray-600 px-6 text-center leading-relaxed flex items-center justify-center">Feature</p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-                <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        
-        
-        <div class="border-t border-gray-300 p-6 text-center rounded-bl-lg">
-          <button class="flex items-center mt-auto text-white bg-indigo-900 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-          <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-        </div>
-      </div>
-          <div id="tier2" class="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
-        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-          <h3 class="tracking-widest">BASIC</h3>
-          <h2 class="text-5xl text-gray-900 font-medium leading-none mb-4 mt-2">$999</h2>
-          <span class="text-sm text-gray-600">One-Time Payment</span>
-        </div>
-        <p class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">text123</p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="h-12 text-gray-600 px-6 text-center leading-relaxed flex items-center justify-center">Feature</p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-            <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-            <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-            <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-            <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <div class="border-t border-gray-300 p-6 text-center rounded-bl-lg">
-          <button class="flex items-center mt-auto text-white bg-indigo-900 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-          <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-        </div>
-      </div>
-      
-      <div id="tier3" class="lg:w-1/3 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-indigo-500 relative">
-        <span class="bg-indigo-900 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
-        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-          <h3 class="tracking-widest">ENHANCED</h3>
-          <h2 class="text-5xl text-gray-900 font-medium flex items-center justify-center leading-none mb-4 mt-2">$550
-            <span class="text-gray-600 text-base ml-1"></span>
-          </h2>
-          <span class="text-sm text-gray-600">One-Time Payment</span>
-        </div>
-        <p class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">text123</p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="h-12 text-gray-600 text-center leading-relaxed flex items-center justify-center">Feature</p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-               <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-               <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-               <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-
-               <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <div class="p-6 text-center border-t border-gray-300">
-          <button class="flex items-center mt-auto text-white bg-indigo-900 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">Button
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-          <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
-        </div>
-      </div>
-      <div id="tier4" class="lg:w-1/3 w-full lg:mt-px border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
-        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
-          <h3 class="tracking-widest">PREMIUM</h3>
-          <h2 class="text-5xl text-gray-900 font-medium flex items-center justify-center leading-none mb-4 mt-2">$999
-            <span class="text-gray-600 text-base ml-1"></span>
-          </h2>
-          <span class="text-sm text-gray-600">One-Time Payment</span>
-        </div>
-        <p class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">text123</p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="h-12 text-gray-600 text-center leading-relaxed flex items-center justify-center">Feature</p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-              <path d="M20 6L9 17l-5-5"></path>
-            </svg>
-          </span>
-        </p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-                <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-                <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-                <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-                <p class="text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-        <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
-          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
-            <path d="M18 6L6 18M6 6l12 12"></path>
-          </svg>
-        </p>
-
       </div>
     </div>
   </div>
-</section>
+  </div>
 
 
-<section class="text-gray-700 py-16 body-font overflow-hidden border-t border-gray-200">
+  <div class="flex bg-indigo-900 gap-24 p-4 rounded text-center items-center justify-center flex-col">
+
+    <div>
+      <ul class="pt-12 mx-auto flex justify-between items-center flex items-center">
+        <li class="m-4">
+          <a href="#"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0">Home</a>
+        </li>
+        <li class="m-4">
+          <a href="#about"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0">About</a>
+        </li>
+        <li class="m-4">
+          <a href="#features"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0">Features</a>
+        </li>
+        <li class="m-4">
+          <a href="#pricing"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0">Pricing</a>
+        </li>
+        <li class="m-4">
+          <a href="#contact"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0">Contact</a>
+        </li>
+        <li class="m-4">
+          <a href="download.html"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0">Download</a>
+        </li>
+      </ul>
+    </div>
+
+    <div
+      class="flex justify-center items-center flex-row text-4xl font-bold  text-white  gap-5 w-full inline-block m-8">
+      <img src="icon.png" alt="Icon" style="height: 84px; width: 84px" />
+      <h1 class="text-6xl font-bold">UnityERP Solution</h1>
+    </div>
+
+
+    <div class="flex justify-center items-center flex-col text-2xl  p-12  text-white  ">
+      UnityERP Suite is designed to streamline and optimize business operations.
+      With a comprehensive suite of features, UnityERP Suite empowers
+      organizations to manage their finances, human resources, customer
+      relationships, and more.
+    </div>
+
+  </div>
+
+  
+  <!-- galary -->
+    <div class="bg-white border-t my-24 py-24 border-gray-200">
+        <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+          <div class="flex items-center gap-12">
+            <h2 class="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white">Gallery</h2>
+
+            <p class="hidden max-w-screen-sm text-gray-500 dark:text-gray-300 md:block">
+              This is a section of some simple filler text,
+              also known as placeholder text. It shares some characteristics of a real written text.
+            </p>
+          </div>
+
+          <a href="#"
+            class="inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base">
+            More
+          </a>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+          <!-- image - start -->
+          <a href="#"
+            class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+            <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+              loading="lazy" alt="Photo by Minh Pham"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+            <div
+              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+            </div>
+
+            <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">VR</span>
+          </a>
+          <!-- image - end -->
+
+          <!-- image - start -->
+          <a href="#"
+            class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+            <img src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=1000"
+              loading="lazy" alt="Photo by Magicle"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+            <div
+              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+            </div>
+
+            <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tech</span>
+          </a>
+          <!-- image - end -->
+
+          <!-- image - start -->
+          <a href="#"
+            class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+            <img src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=1000"
+              loading="lazy" alt="Photo by Martin Sanchez"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+            <div
+              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+            </div>
+
+            <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dev</span>
+          </a>
+          <!-- image - end -->
+
+          <!-- image - start -->
+          <a href="#"
+            class="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80">
+            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+              loading="lazy" alt="Photo by Lorenzo Herrera"
+              class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+            <div
+              class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+            </div>
+
+            <span class="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
+          </a>
+          <!-- image - end -->
+        </div>
+      </div>
+
+  <!-- Features Section -->
+  <section id="features_" class=" bg-indigo-900 apps_grid rounded-lg mt-10 p-10 grid grid-cols-1 gap-8  grid-cols-5">
+    <!-- Cards will be inserted here dynamically -->
+    </div>
+
+  </section>
+
+  <!-- Pricing Section -->
+
+
+
+  <section id="pricing" class="border-t text-gray-700 body-font border-t py-16 border-gray-200">
+    <div class="container px-5 py-16 mx-auto flex flex-wrap">
+      <div class="lg:w-1/5 mt-48 hidden lg:block">
+        <div id="features"
+          class=" mt-px border-t border-gray-300 border-b border-l rounded-tl-lg rounded-bl-lg overflow-hidden">
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start -mt-px">feature 1
+          </p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">feature 2</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Android App</p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Web Browser</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Connections</p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Local Network</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Public Network</p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Cloud</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Backup</p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Applications</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Accounting</p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Inventory</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Sales</p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Point of Sale</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Expenses</p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Feature 2</p>
+          <p class="bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start">Expenses</p>
+          <p class="text-gray-900 h-12 text-center px-4 flex items-center justify-start">Feature 2</p>
+
+        </div>
+      </div>
+      <div class="flex lg:w-3/4 w-full  lg:border border-gray-300 rounded-lg">
+        <div id="tier1"
+          class="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
+          <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+            <h3 class="tracking-widest">CORE</h3>
+            <h2 class="text-5xl text-gray-900 font-medium leading-none mb-4 mt-2">$999</h2>
+            <span class="text-sm text-gray-600">One-Time Payment</span>
+          </div>
+          <p
+            class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">
+            text123</p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="h-12 text-gray-600 px-6 text-center leading-relaxed flex items-center justify-center">Feature</p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+
+
+          <div class="border-t border-gray-300 p-6 text-center rounded-bl-lg">
+            <button
+              class="flex items-center mt-auto text-white bg-indigo-900 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">Button
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+          </div>
+        </div>
+        <div id="tier2"
+          class="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
+          <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+            <h3 class="tracking-widest">BASIC</h3>
+            <h2 class="text-5xl text-gray-900 font-medium leading-none mb-4 mt-2">$999</h2>
+            <span class="text-sm text-gray-600">One-Time Payment</span>
+          </div>
+          <p
+            class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">
+            text123</p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="h-12 text-gray-600 px-6 text-center leading-relaxed flex items-center justify-center">Feature</p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <div class="border-t border-gray-300 p-6 text-center rounded-bl-lg">
+            <button
+              class="flex items-center mt-auto text-white bg-indigo-900 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">Button
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+          </div>
+        </div>
+
+        <div id="tier3" class="lg:w-1/3 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-indigo-500 relative">
+          <span
+            class="bg-indigo-900 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
+          <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+            <h3 class="tracking-widest">ENHANCED</h3>
+            <h2 class="text-5xl text-gray-900 font-medium flex items-center justify-center leading-none mb-4 mt-2">$550
+              <span class="text-gray-600 text-base ml-1"></span>
+            </h2>
+            <span class="text-sm text-gray-600">One-Time Payment</span>
+          </div>
+          <p
+            class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">
+            text123</p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="h-12 text-gray-600 text-center leading-relaxed flex items-center justify-center">Feature</p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <div class="p-6 text-center border-t border-gray-300">
+            <button
+              class="flex items-center mt-auto text-white bg-indigo-900 border-0 py-2 px-4 w-full focus:outline-none hover:bg-indigo-600 rounded">Button
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </button>
+            <p class="text-xs text-gray-500 mt-3">Literally you probably haven't heard of them jean shorts.</p>
+          </div>
+        </div>
+        <div id="tier4"
+          class="lg:w-1/3 w-full lg:mt-px border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
+          <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+            <h3 class="tracking-widest">PREMIUM</h3>
+            <h2 class="text-5xl text-gray-900 font-medium flex items-center justify-center leading-none mb-4 mt-2">$999
+              <span class="text-gray-600 text-base ml-1"></span>
+            </h2>
+            <span class="text-sm text-gray-600">One-Time Payment</span>
+          </div>
+          <p
+            class="bg-gray-100 text-gray-600 h-12 text-center px-2 flex items-center -mt-px justify-center border-t border-gray-300">
+            text123</p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="h-12 text-gray-600 text-center leading-relaxed flex items-center justify-center">Feature</p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <span
+              class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                class="w-3 h-3" viewBox="0 0 24 24">
+                <path d="M20 6L9 17l-5-5"></path>
+              </svg>
+            </span>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+          <p class="text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+
+
+          <p class="bg-gray-100 text-gray-600 text-center h-12 flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2"
+              class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="text-gray-700 py-24 body-font overflow-hidden border-t border-gray-200">
     <!--Apps Footer -->
-    <footer class="bg-gray-800 text-white py-12 rounded-t-lg">
+    <footer class="bg-gray-800 text-white py-16 rounded-t-lg">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 px-8">
         <!-- Footer Container -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-8">
@@ -690,317 +764,314 @@
       </div>
     </footer>
 
-    <!-- /Footer -->
 
     <!-- Footer -->
-    <footer class="bg-indigo-900 text-white text-center py-4 rounded-b-lg">
+    <footer class="bg-gray-900 text-white text-center py-6 rounded-b-lg">
       <div class="container mx-auto">
         <p>&copy; 2024 UnityERP Suite. All rights reserved.</p>
       </div>
     </footer>
-  </body>
+</body>
 
-  
-         <script>
-          // Fetch data from JSON file
-          fetch("apps.json")
-            .then((response) => response.json())
-            .then((data) => {
-              const container = document.querySelector(".apps_grid");
 
-              data.forEach((app) => {
-                const card = document.createElement("div");
-                card.className =
-                  "bg-white rounded-lg overflow-hidden shadow-md";
+<script>
+  // Fetch data from JSON file
+  fetch("apps.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const container = document.querySelector(".apps_grid");
 
-                const icon = document.createElement("img");
-                // icon.src = app.icon;
-                icon.src = "app.png";
-                icon.alt = `${app.title} Icon`;
-                icon.className = "h-20 w-20 object-cover";
+      data.forEach((app) => {
+        const card = document.createElement("div");
+        card.className =
+          "bg-white rounded-lg overflow-hidden shadow-md";
 
-                const content = document.createElement("div");
-                content.className = "p-4";
+        const icon = document.createElement("img");
+        // icon.src = app.icon;
+        icon.src = "app.png";
+        icon.alt = `${app.title} Icon`;
+        icon.className = "h-20 w-20 object-cover";
 
-                const title = document.createElement("h3");
-                title.textContent = app.title;
-                title.className = "text-xl font-semibold mb-2";
+        const content = document.createElement("div");
+        content.className = "p-4";
 
-                const description = document.createElement("p");
-                description.textContent = app.description;
-                description.className = "text-gray-700";
+        const title = document.createElement("h3");
+        title.textContent = app.title;
+        title.className = "text-xl font-semibold mb-2";
 
-                content.appendChild(title);
-                content.appendChild(description);
+        const description = document.createElement("p");
+        description.textContent = app.description;
+        description.className = "text-gray-700";
 
-                card.appendChild(icon);
-                card.appendChild(content);
+        content.appendChild(title);
+        content.appendChild(description);
 
-                container.appendChild(card);
-              });
-            })
-            .catch((error) => console.error("Error fetching data:", error));
-        </script>
-    <!-- JavaScript to fetch and populate footer data -->
-    <script>
+        card.appendChild(icon);
+        card.appendChild(content);
 
-      //----------------------------------------------------------------------------------------------
+        container.appendChild(card);
+      });
+    })
+    .catch((error) => console.error("Error fetching data:", error));
+</script>
+<!-- JavaScript to fetch and populate footer data -->
+<script>
 
-document.addEventListener("DOMContentLoaded", function () {
+  //----------------------------------------------------------------------------------------------
+
+  document.addEventListener("DOMContentLoaded", function () {
     fetch("apps.json")
-        .then((response) => response.json())
-        .then((data) => {
-            const footerColumns = document.querySelectorAll(".footer-column");
-            let columnIndex = 0; // Index of the current column
-            data.forEach((app) => {
-                const column = document.createElement("div");
-                column.classList.add("footer-column");
-                const titleContainer = document.createElement("div"); // Container for the title and icon
-                titleContainer.classList.add("flex", "items-center", "mb-4"); // Flex container to align items horizontally
+      .then((response) => response.json())
+      .then((data) => {
+        const footerColumns = document.querySelectorAll(".footer-column");
+        let columnIndex = 0; // Index of the current column
+        data.forEach((app) => {
+          const column = document.createElement("div");
+          column.classList.add("footer-column");
+          const titleContainer = document.createElement("div"); // Container for the title and icon
+          titleContainer.classList.add("flex", "items-center", "mb-4"); // Flex container to align items horizontally
 
-                const icon = document.createElement("img");
-                icon.src = "app.png";
-                icon.alt = app.title + " Icon";
-                icon.classList.add("w-6", "h-6", "mr-2");
-                titleContainer.appendChild(icon); // Append the icon first
+          const icon = document.createElement("img");
+          icon.src = "app.png";
+          icon.alt = app.title + " Icon";
+          icon.classList.add("w-6", "h-6", "mr-2");
+          titleContainer.appendChild(icon); // Append the icon first
 
-                const title = document.createElement("h3");
-                title.textContent = app.title;
-                title.classList.add("text-lg", "font-semibold");
-                titleContainer.appendChild(title); // Append the title after the icon
+          const title = document.createElement("h3");
+          title.textContent = app.title;
+          title.classList.add("text-lg", "font-semibold");
+          titleContainer.appendChild(title); // Append the title after the icon
 
-                const ul = document.createElement("ul");
-                const li = document.createElement("li");
-                const link = document.createElement("a");
-                link.href = "#"; // Add your link here
-                li.appendChild(link);
-                ul.appendChild(li);
-                column.appendChild(titleContainer); // Append the title container
-                column.appendChild(ul);
-                footerColumns[columnIndex].appendChild(column); // Append to the column based on the columnIndex
-                columnIndex = (columnIndex + 1) % footerColumns.length; // Increment columnIndex and reset to 0 if it exceeds the number of columns
-            });
-        })
-        .catch((error) => console.error("Error fetching data:", error));
-});
+          const ul = document.createElement("ul");
+          const li = document.createElement("li");
+          const link = document.createElement("a");
+          link.href = "#"; // Add your link here
+          li.appendChild(link);
+          ul.appendChild(li);
+          column.appendChild(titleContainer); // Append the title container
+          column.appendChild(ul);
+          footerColumns[columnIndex].appendChild(column); // Append to the column based on the columnIndex
+          columnIndex = (columnIndex + 1) % footerColumns.length; // Increment columnIndex and reset to 0 if it exceeds the number of columns
+        });
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  });
 
-      //----------------------------------------------------------------------------------------------
+  //----------------------------------------------------------------------------------------------
 
-      function updateCountdown() {
-        const targetEndTime = localStorage.getItem("saleEndTime");
-        if (!targetEndTime) {
-          // Set the target date/time for the end of the sale (4 hours from now) if not set already
-          const targetDate = new Date();
-          targetDate.setHours(targetDate.getHours() + 4);
-          localStorage.setItem("saleEndTime", targetDate.getTime());
-        }
+  function updateCountdown() {
+    const targetEndTime = localStorage.getItem("saleEndTime");
+    if (!targetEndTime) {
+      // Set the target date/time for the end of the sale (4 hours from now) if not set already
+      const targetDate = new Date();
+      targetDate.setHours(targetDate.getHours() + 4);
+      localStorage.setItem("saleEndTime", targetDate.getTime());
+    }
 
-        const now = new Date();
-        const endTime = new Date(parseInt(localStorage.getItem("saleEndTime")));
+    const now = new Date();
+    const endTime = new Date(parseInt(localStorage.getItem("saleEndTime")));
 
-        const timeDifference = endTime - now;
+    const timeDifference = endTime - now;
 
-        // Calculate remaining time
-        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const minutes = Math.floor(
-          (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
-        );
-        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+    // Calculate remaining time
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor(
+      (timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const minutes = Math.floor(
+      (timeDifference % (1000 * 60 * 60)) / (1000 * 60)
+    );
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
-        // Update the countdown elements
-        document.getElementById("days").innerText =
-          days < 10 ? "0" + days + "d": days + "d";
-        document.getElementById("hours").innerText =
-          hours < 10 ? "0" + hours + "h": hours+ "h";
-        document.getElementById("minutes").innerText =
-          minutes < 10 ? "0" + minutes + "m": minutes + "m";
-        document.getElementById("seconds").innerText =
-          seconds < 10 ? "0" + seconds + "s": seconds + "s";
+    // Update the countdown elements
+    document.getElementById("days").innerText =
+      days < 10 ? "0" + days + "d" : days + "d";
+    document.getElementById("hours").innerText =
+      hours < 10 ? "0" + hours + "h" : hours + "h";
+    document.getElementById("minutes").innerText =
+      minutes < 10 ? "0" + minutes + "m" : minutes + "m";
+    document.getElementById("seconds").innerText =
+      seconds < 10 ? "0" + seconds + "s" : seconds + "s";
 
-        // If the timer reaches zero, display a message and stop the timer
-        if (timeDifference <= 0) {
-          clearInterval(timerInterval);
-          document.getElementById("countdown").innerText = "Sale has ended!";
-          localStorage.removeItem("saleEndTime"); // Clear the end time from localStorage
-        }
-      }
+    // If the timer reaches zero, display a message and stop the timer
+    if (timeDifference <= 0) {
+      clearInterval(timerInterval);
+      document.getElementById("countdown").innerText = "Sale has ended!";
+      localStorage.removeItem("saleEndTime"); // Clear the end time from localStorage
+    }
+  }
 
-      // Update the countdown every second
-      const timerInterval = setInterval(updateCountdown, 1000);
-      // Initial call to update the countdown
-      updateCountdown();
+  // Update the countdown every second
+  const timerInterval = setInterval(updateCountdown, 1000);
+  // Initial call to update the countdown
+  updateCountdown();
 
-      //----------------------------------------------------------------------------------------------
-      // return
-          const featuresContainer = document.getElementById('features');
+  //----------------------------------------------------------------------------------------------
+  // return
+  const featuresContainer = document.getElementById('features');
 
-            fetch("pricing.json")
-            .then((response) => response.json())
-            .then((data) => {
-            const  pricingFeatures = data;
-            let html = '';
-         pricingFeatures.forEach((feature, index) => {
-                html += `<p class="${index % 2 === 0 ? 'bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start -mt-px' : 'text-gray-900 h-12 text-center px-4 flex items-center justify-start'}">${feature.title}</p>
+  fetch("pricing.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const pricingFeatures = data;
+      let html = '';
+      pricingFeatures.forEach((feature, index) => {
+        html += `<p class="${index % 2 === 0 ? 'bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-start -mt-px' : 'text-gray-900 h-12 text-center px-4 flex items-center justify-start'}">${feature.title}</p>
                 `;
-            });
-            featuresContainer.innerHTML = html;
-              featuresContainer.innerHTML = html;
+      });
+      featuresContainer.innerHTML = html;
+      featuresContainer.innerHTML = html;
 
-            })
-            .catch((error) => console.error("Error fetching data:", error));
+    })
+    .catch((error) => console.error("Error fetching data:", error));
 
 
-      //----------------------------------------------------------------------------------------------
-  
-         const tier1Container = document.getElementById('tier1');
+  //----------------------------------------------------------------------------------------------
 
-            fetch("pricing.json")
-            .then((response) => response.json())
-            .then((data) => {
-            const  pricingFeatures = data;
-            let html = `        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+  const tier1Container = document.getElementById('tier1');
+
+  fetch("pricing.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const pricingFeatures = data;
+      let html = `        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
           <h3 class="tracking-widest">CORE</h3>
           <h2 class="text-5xl text-gray-900 font-medium leading-none mb-4 mt-2">$150</h2>
           <span class="text-sm text-gray-600">One-Time Payment</span>
         </div>`;
-         pricingFeatures.forEach((feature, index) => {
-                html += `
+      pricingFeatures.forEach((feature, index) => {
+        html += `
                 <p class="${index % 2 === 0 ? 'bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-center -mt-px' : 'text-gray-900 h-12 text-center px-4 flex items-center justify-center'}">
-                  ${feature.tier1  == 1 ? `
+                  ${feature.tier1 == 1 ? `
                     <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
                     <path d="M20 6L9 17l-5-5"></path>
                     </svg>
-                    </span>` 
-                    :`
+                    </span>`
+            : `
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="text-center flex items-center justify-center w-5 h-5 text-gray-500" viewBox="0 0 24 24">
                         <path d="M18 6L6 18M6 6l12 12"></path>
                       </svg>
                     `}
                   </p>
                 `;
-            });
-            tier1Container.innerHTML = html;
-            })
-            .catch((error) => console.error("Error fetching data:", error));
+      });
+      tier1Container.innerHTML = html;
+    })
+    .catch((error) => console.error("Error fetching data:", error));
 
-      //----------------------------------------------------------------------------------------------
-      
-      //----------------------------------------------------------------------------------------------
-  
-         const tier2Container = document.getElementById('tier2');
 
-            fetch("pricing.json")
-            .then((response) => response.json())
-            .then((data) => {
-            const  pricingFeatures = data;
-            let html = `        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+  //----------------------------------------------------------------------------------------------
+
+  const tier2Container = document.getElementById('tier2');
+
+  fetch("pricing.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const pricingFeatures = data;
+      let html = `        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
           <h3 class="tracking-widest">BASIC</h3>
           <h2 class="text-5xl text-gray-900 font-medium leading-none mb-4 mt-2">$250</h2>
           <span class="text-sm text-gray-600">One-Time Payment</span>
         </div>`;
-         pricingFeatures.forEach((feature, index) => {
-                html += `
+      pricingFeatures.forEach((feature, index) => {
+        html += `
                 <p class="${index % 2 === 0 ? 'bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-center -mt-px' : 'text-gray-900 h-12 text-center px-4 flex items-center justify-center'}">
-                  ${feature.tier2  == 1 ? `
+                  ${feature.tier2 == 1 ? `
                     <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
                     <path d="M20 6L9 17l-5-5"></path>
                     </svg>
-                    </span>` 
-                    :`
+                    </span>`
+            : `
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="text-center flex items-center justify-center w-5 h-5 text-gray-500" viewBox="0 0 24 24">
                         <path d="M18 6L6 18M6 6l12 12"></path>
                       </svg>
                     `}
                   </p>
                 `;
-            });
-            tier2Container.innerHTML = html;
-            })
-            .catch((error) => console.error("Error fetching data:", error));
+      });
+      tier2Container.innerHTML = html;
+    })
+    .catch((error) => console.error("Error fetching data:", error));
 
-      //----------------------------------------------------------------------------------------------
-      
-      //----------------------------------------------------------------------------------------------
-  
-         const tier3Container = document.getElementById('tier3');
+  //----------------------------------------------------------------------------------------------
 
-            fetch("pricing.json")
-            .then((response) => response.json())
-            .then((data) => {
-              const  pricingFeatures = data;
-              let html = `
+
+  const tier3Container = document.getElementById('tier3');
+
+  fetch("pricing.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const pricingFeatures = data;
+      let html = `
                 <span class="bg-indigo-900 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span>
                 <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
                 <h3 class="tracking-widest">ENHANCED</h3>
                 <h2 class="text-5xl text-gray-900 font-medium leading-none mb-4 mt-2">$400</h2>
                 <span class="text-sm text-gray-600">One-Time Payment</span>
                 </div>`;
-                pricingFeatures.forEach((feature, index) => {
-                        html += `
+      pricingFeatures.forEach((feature, index) => {
+        html += `
                         <p class="${index % 2 === 0 ? 'bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-center -mt-px' : 'text-gray-900 h-12 text-center px-4 flex items-center justify-center'}">
-                          ${feature.tier3  == 1 ? `
+                          ${feature.tier3 == 1 ? `
                             <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
                             <path d="M20 6L9 17l-5-5"></path>
                             </svg>
-                            </span>` 
-                            :`
+                            </span>`
+            : `
                               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="text-center flex items-center justify-center w-5 h-5 text-gray-500" viewBox="0 0 24 24">
                                 <path d="M18 6L6 18M6 6l12 12"></path>
                               </svg>
                             `}
                           </p>
                         `;
-                    });
-            tier3Container.innerHTML = html;
-            })
-            .catch((error) => console.error("Error fetching data:", error));
+      });
+      tier3Container.innerHTML = html;
+    })
+    .catch((error) => console.error("Error fetching data:", error));
 
-      //----------------------------------------------------------------------------------------------
-            //----------------------------------------------------------------------------------------------
-  
-         const tier4Container = document.getElementById('tier4');
+  //----------------------------------------------------------------------------------------------
 
-            fetch("pricing.json")
-            .then((response) => response.json())
-            .then((data) => {
-            const  pricingFeatures = data;
-            let html = `        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+  const tier4Container = document.getElementById('tier4');
+
+  fetch("pricing.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const pricingFeatures = data;
+      let html = `        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
         <h3 class="tracking-widest">PREMIUM</h3>
           <h2 class="text-5xl text-gray-900 font-medium leading-none mb-4 mt-2">$600</h2>
           <span class="text-sm text-gray-600">One-Time Payment</span>
         </div>`;
-         pricingFeatures.forEach((feature, index) => {
-                html += `
+      pricingFeatures.forEach((feature, index) => {
+        html += `
                 <p class="${index % 2 === 0 ? 'bg-gray-100 text-gray-900 h-12 text-center px-4 flex items-center justify-center -mt-px' : 'text-gray-900 h-12 text-center px-4 flex items-center justify-center'}">
-                  ${feature.tier4  == 1 ? `
+                  ${feature.tier4 == 1 ? `
                     <span class="w-5 h-5 inline-flex items-center justify-center bg-gray-500 text-white rounded-full flex-shrink-0">
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
                     <path d="M20 6L9 17l-5-5"></path>
                     </svg>
-                    </span>` 
-                    :`
+                    </span>`
+            : `
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" class="text-center flex items-center justify-center w-5 h-5 text-gray-500" viewBox="0 0 24 24">
                         <path d="M18 6L6 18M6 6l12 12"></path>
                       </svg>
                     `}
                   </p>
                 `;
-            });
-            tier4Container.innerHTML = html;
-            })
-            .catch((error) => console.error("Error fetching data:", error));
+      });
+      tier4Container.innerHTML = html;
+    })
+    .catch((error) => console.error("Error fetching data:", error));
 
-      //----------------------------------------------------------------------------------------------
-
-
+  //----------------------------------------------------------------------------------------------
 
 
 
-    </script>
+
+
+</script>
+
 </html>
