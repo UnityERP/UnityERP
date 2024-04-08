@@ -1,19 +1,40 @@
 [
   {
+    "title": "Windows desktop",
+    "description": "Build professional business websites effortlessly.",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "5"
+  },
+
+  {
+    "title": "Android App",
+    "description": "Build professional business websites effortlessly.",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "5"
+  },
+  {
     "title": "Website",
     "description": "Build professional business websites effortlessly.",
     "tier1": "1",
-    "tier2": "0",
+    "tier2": "1",
     "tier3": "1",
-    "tier4": "1"
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "eCommerce",
     "description": "Effortlessly sell products online with our comprehensive eCommerce solution.",
-    "tier1": "0",
+    "tier1": "1",
     "tier2": "1",
-    "tier3": "0",
-    "tier4": "1"
+    "tier3": "1",
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "eLearning",
@@ -21,94 +42,106 @@
     "tier1": "1",
     "tier2": "1",
     "tier3": "1",
-    "tier4": "0"
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "CRM",
     "description": "Efficiently manage your leads and close more deals with our powerful CRM system.",
     "tier1": "1",
     "tier2": "1",
-    "tier3": "0",
-    "tier4": "0"
+    "tier3": "1",
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "Sales",
     "description": "Streamline your sales process from quotations to invoices with our integrated solution.",
     "tier1": "1",
-    "tier2": "0",
+    "tier2": "1",
     "tier3": "1",
-    "tier4": "1"
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "Point of Sale",
     "description": "Easily manage sales transactions in your shop or restaurant with our POS interface.",
     "tier1": "1",
     "tier2": "1",
-    "tier3": "0",
-    "tier4": "1"
+    "tier3": "1",
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "Accounting",
     "description": "Efficiently manage financial and analytic accounting with our comprehensive system.",
-    "tier1": "0",
+    "tier1": "1",
     "tier2": "1",
     "tier3": "1",
-    "tier4": "0"
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "Invoicing",
     "description": "Simplify your invoicing process and manage payments seamlessly.",
     "tier1": "1",
-    "tier2": "0",
+    "tier2": "1",
     "tier3": "1",
-    "tier4": "0"
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "Expenses",
     "description": "Streamline and manage employee expenses effortlessly.",
-    "tier1": "0",
+    "tier1": "1",
     "tier2": "1",
     "tier3": "1",
-    "tier4": "0"
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "Documents",
     "description": "Effortlessly manage and organize your documents with our document management system.",
     "tier1": "1",
-    "tier2": "0",
-    "tier3": "0",
-    "tier4": "1"
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "Inventory",
     "description": "Efficiently manage your stock and logistics activities with our inventory management system.",
     "tier1": "1",
     "tier2": "1",
-    "tier3": "0",
-    "tier4": "1"
+    "tier3": "1",
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "Manufacturing",
     "description": "Streamline manufacturing orders and bill of materials with our comprehensive solution.",
-    "tier1": "0",
-    "tier2": "0",
+    "tier1": "1",
+    "tier2": "1",
     "tier3": "1",
-    "tier4": "1"
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "Purchase",
     "description": "Streamline purchase orders, tenders, and agreements with our integrated solution.",
     "tier1": "1",
-    "tier2": "0",
-    "tier3": "0",
-    "tier4": "1"
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "5"
   },
   {
     "title": "Employees",
     "description": "manage employee information and streamline HR processes.",
-    "tier1": "0",
+    "tier1": "1",
     "tier2": "1",
     "tier3": "1",
-    "tier4": "0"
+    "tier4": "1",
+    "price": "5"
   }
 ]

@@ -12,28 +12,14 @@
     />
   </head>
 
-  <body class="p-4 flex flex-col items-center gap-4 pt-8">
-    <p class="text-base font-semibold text-gray-600">
-      Pay once, own it forever
-    </p>
-    <div id="checkboxGrid" class="grid grid-cols-1 gap-4">
+  <body class="p-4">
+    <div id="checkboxGrid" class="grid grid-cols-3 gap-4">
       <!-- Checkboxes will be generated here dynamically -->
     </div>
 
     <!-- Result Element -->
     <div class="mt-4">
-      <p class="mt-6 flex items-baseline justify-center">
-        <span class="text-5xl font-bold tracking-tight text-gray-900">$</span>
-        <span
-          id="result"
-          class="text-5xl font-bold tracking-tight text-gray-900"
-          >0</span
-        >
-        <span
-          class="text-sm font-semibold leading-6 tracking-wide text-gray-600"
-          >USD</span
-        >
-      </p>
+      <p>Total: <span id="result">0</span></p>
     </div>
 
     <script>
