@@ -16,7 +16,7 @@
     <p class="text-base font-semibold text-gray-600">
       Pay once, own it forever
     </p>
-    <div id="checkboxGrid" class="grid grid-cols-1 gap-4">
+    <div id="checkboxGrid" class="grid grid-cols-3 gap-4">
       <!-- Checkboxes will be generated here dynamically -->
     </div>
 
@@ -45,31 +45,63 @@
         resultElement.innerText = parseInt(resultElement.innerText) + price;
       }
 
-      // Fetch data from pricing.json
-      fetch("pricing.json")
+      // Fetch data from apps.json
+      fetch("apps.json")
         .then((response) => response.json())
         .then((data) => {
           const checkboxGrid = document.getElementById("checkboxGrid");
           // Loop through the data and generate checkboxes dynamically
           data.forEach((item) => {
-            const label = document.createElement("label");
-            label.className =
-              "hover:bg-gray-300 bg-gray-100 btn btn-primary p-4 rounded-lg shdow-md border flex items-center space-x-2";
-            const checkbox = document.createElement("input");
-            checkbox.type = "checkbox";
-            checkbox.className = "form-checkbox h-5 w-5 text-indigo-600";
-            checkbox.onchange = function () {
-              if (this.checked) {
-                updateResult(parseInt(item.price));
+            if (item.visible) {
+              const label = document.createElement("label");
+
+              if (item.enabled == true) {
+                label.className =
+                  "hover:bg-gray-300 bg-gray-100  gap-4 justify-between btn btn-primary p-4 rounded-lg shdow-md border flex items-center space-x-2";
               } else {
-                updateResult(parseInt(-item.price));
+                label.className =
+                  "bg-gray-100 opacity-50 gap-4 justify-between btn btn-primary p-4 rounded-lg shdow-md border flex items-center space-x-2";
               }
-            };
-            const span = document.createElement("span");
-            span.innerText = item.title;
-            label.appendChild(checkbox);
-            label.appendChild(span);
-            checkboxGrid.appendChild(label);
+
+              const img = document.createElement("img");
+
+              img.src = item.icon; // Path to your image
+              img.alt = "Description of the image";
+              img.id = item.name;
+              img.className =
+                " w-10 rounded-lg border-2 border-gray-200 p-1 bg-white  hover:opacity-100";
+
+              const checkbox = document.createElement("input");
+
+              checkbox.type = "checkbox";
+              checkbox.className =
+                " rounded-full form-checkbox h-5 w-5 checkbox opacity-70  text-gray-600";
+
+              if (item.required) {
+                checkbox.checked = true;
+                checkbox.disabled = true;
+                updateResult(parseInt(item.price));
+              }
+              checkbox.onchange = function () {
+                if (item.enabled == true) {
+                  if (this.checked) {
+                    updateResult(parseInt(item.price));
+                  } else {
+                    updateResult(parseInt(-item.price));
+                  }
+                } else {
+                  checkbox.checked = false;
+                  checkbox.disabled = false;
+                }
+              };
+
+              const span = document.createElement("span");
+              span.innerText = item.title;
+              label.appendChild(img);
+              label.appendChild(span);
+              label.appendChild(checkbox);
+              checkboxGrid.appendChild(label);
+            }
           });
         })
         .catch((error) => console.error("Error fetching data:", error));

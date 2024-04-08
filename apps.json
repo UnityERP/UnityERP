@@ -1,72 +1,298 @@
 [
   {
+    "title": "Windows desktop",
+    "description": "Build professional business websites effortlessly.",
+    "icon": "windows.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": true,
+    "required": true
+  },
+  {
+    "title": "Android App",
+    "description": "Build professional business websites effortlessly.",
+    "icon": "android.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": true,
+    "required": true
+  },
+  {
+    "title": "Local Access",
+    "description": "Build professional business websites effortlessly.",
+    "icon": "network.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": true,
+    "required": true
+  },
+
+  {
+    "title": "Public Access",
+    "description": "Build professional business websites effortlessly.",
+    "icon": "public.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": true,
+    "required": true
+  },
+
+  {
     "title": "Website",
     "description": "Build professional business websites effortlessly.",
-    "icon": "https://UnityERP-suite.com/website_icon.png"
+    "icon": "web.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": true,
+    "required": false
   },
   {
     "title": "eCommerce",
     "description": "Effortlessly sell products online with our comprehensive eCommerce solution.",
-    "icon": "https://UnityERP-suite.com/ecommerce_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "eLearning",
     "description": "Create and publish engaging courses for your learners with our intuitive eLearning platform.",
-    "icon": "https://UnityERP-suite.com/elearning_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "CRM",
     "description": "Efficiently manage your leads and close more deals with our powerful CRM system.",
-    "icon": "https://UnityERP-suite.com/crm_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "Sales",
     "description": "Streamline your sales process from quotations to invoices with our integrated solution.",
-    "icon": "https://UnityERP-suite.com/sales_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "Point of Sale",
     "description": "Easily manage sales transactions in your shop or restaurant with our POS interface.",
-    "icon": "https://UnityERP-suite.com/pos_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "Accounting",
     "description": "Efficiently manage financial and analytic accounting with our comprehensive system.",
-    "icon": "https://UnityERP-suite.com/accounting_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "Invoicing",
     "description": "Simplify your invoicing process and manage payments seamlessly.",
-    "icon": "https://UnityERP-suite.com/invoicing_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "Expenses",
     "description": "Streamline and manage employee expenses effortlessly.",
-    "icon": "https://UnityERP-suite.com/expenses_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "Documents",
     "description": "Effortlessly manage and organize your documents with our document management system.",
-    "icon": "https://UnityERP-suite.com/documents_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "Inventory",
     "description": "Efficiently manage your stock and logistics activities with our inventory management system.",
-    "icon": "https://UnityERP-suite.com/inventory_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "Manufacturing",
     "description": "Streamline manufacturing orders and bill of materials with our comprehensive solution.",
-    "icon": "https://UnityERP-suite.com/manufacturing_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "Purchase",
     "description": "Streamline purchase orders, tenders, and agreements with our integrated solution.",
-    "icon": "https://UnityERP-suite.com/purchase_icon.png"
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   },
   {
     "title": "Employees",
-    "description": "Centrally manage employee information and streamline HR processes.",
-    "icon": "https://UnityERP-suite.com/employees_icon.png"
+    "description": "manage employee information and streamline HR processes.",
+    "icon": "app.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
+  },
+  {
+    "title": "Whatsapp",
+    "description": "manage employee information and streamline HR processes.",
+    "icon": "whatsapp.png",
+    "type": "subscription",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
+  },
+  {
+    "title": "ChatGPT",
+    "description": "manage employee information and streamline HR processes.",
+    "icon": "chatgpt.png",
+    "type": "subscription",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
+  },
+  {
+    "title": "Custom Name/Logo",
+    "description": "manage employee information and streamline HR processes.",
+    "icon": "custom.png",
+    "type": "app",
+    "tier1": "1",
+    "tier2": "1",
+    "tier3": "1",
+    "tier4": "1",
+    "price": "35",
+    "visible": true,
+    "enabled": false,
+    "required": false
   }
 ]

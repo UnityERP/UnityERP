@@ -31,8 +31,8 @@
         resultElement.innerText = parseInt(resultElement.innerText) + price;
       }
 
-      // Fetch data from pricing.json
-      fetch("pricing.json")
+      // Fetch data from apps.json
+      fetch("apps.json")
         .then((response) => response.json())
         .then((data) => {
           const checkboxGrid = document.getElementById("checkboxGrid");
