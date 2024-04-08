@@ -85,7 +85,7 @@
             class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0">About</a>
         </li>
         <li class="m-4">
-          <a href="#features"
+          <a href="#features_"
             class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-black hover:bg-white mt-4 mt-0">Features</a>
         </li>
         <li class="m-4">
@@ -120,8 +120,8 @@
   </div>
 
 
-  <!-- galary -->
-  <div class="bg-white border-t my-24 py-24 border-gray-200">
+  <!-- features -->
+  <div id="features_" class="bg-white border-t my-24 py-24 border-gray-200">
     <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
       <div class="flex items-center gap-12">
         <h2 class=" font-bold text-gray-800 w-1/4 text-2xl dark:text-white">What can you do?</h2>
@@ -269,7 +269,7 @@
 
 
 
-  <div class="p-4 flex flex-col items-center gap-4 pt-8">
+  <div id="pricing" class="p-4 flex flex-col items-center gap-4 pt-8">
     <p class="text-base text-2xl font-semibold text-gray-600">
       Pay once, own it forever
     </p>
@@ -335,7 +335,7 @@
               img.src = item.icon; // Path to your image
               img.alt = "Description of the image";
               img.id = item.name;
-              img.className = " w-3 ";
+              img.className = "w-3 ";
 
               const span = document.createElement("span");
               span.innerText = item.title;
