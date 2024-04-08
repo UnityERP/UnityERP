@@ -13,24 +13,32 @@
   </head>
 
   <body class="p-4 flex flex-col items-center gap-4 pt-8">
-    <p class="text-base font-semibold text-gray-600">
+    <p class="text-base text-2xl font-semibold text-gray-600">
       Pay once, own it forever
     </p>
-    <div id="appGrid" class="grid grid-cols-2 gap-4">
-      <div id="checkboxGrid" class="grid grid-cols-3 gap-4">
+    <div
+      id="appGrid"
+      class="grid grid-cols-5 gap-4 rounded-lg bg-gray-100 m-6 p-4"
+    >
+      <div
+        id="checkboxGrid"
+        class="grid grid-cols-3 col-span-4 gap-4 rounded-lg shadow-sm"
+      >
         <!-- Checkboxes will be generated here dynamically -->
       </div>
       <!-- Result Element -->
-      <div class="mt-4">
-        <div id="appGridFeatures" class=""></div>
+      <div>
+        <div id="appGridFeatures">
+          <!-- Features will be generated here dynamically -->
+        </div>
 
         <p
-          class="shadow-sm outline-none border-gray-300 border py-8 mt-6 flex items-baseline justify-center"
+          class="shadow-sm outline-none rounded-lg shadow-md py-4 mt-4 flex items-baseline justify-center"
         >
           <span class="text-4xl font-bold tracking-tight text-gray-900">$</span>
           <span
             id="result"
-            class="text-5xl font-bold tracking-tight text-gray-900"
+            class="text-4xl font-bold tracking-tight text-gray-900"
             >0</span
           >
           <span
@@ -55,6 +63,7 @@
         .then((response) => response.json())
         .then((data) => {
           const appGridFeatures = document.getElementById("appGridFeatures");
+          appGridFeatures.className = " rounded-lg shadow-md bg-gray-100  p-4 ";
 
           // Loop through the data and generate checkboxes dynamically
           data.forEach((item) => {
@@ -62,18 +71,18 @@
               const label = document.createElement("label");
 
               label.className =
-                "hover:bg-gray-300 gap-2    justify-start btn btn-primary p-4 rounded-lg shdow-md  flex items-center ";
+                "gap-2 justify-start  btn btn-primary p-1 rounded-lg flex items-center ";
 
               const img = document.createElement("img");
 
               img.src = item.icon; // Path to your image
               img.alt = "Description of the image";
               img.id = item.name;
-              img.className = " w-6 border-2  p-1 bg-white  hover:opacity-100";
+              img.className = " w-3 ";
 
               const span = document.createElement("span");
               span.innerText = item.title;
-              span.className = "font-bold text-sm";
+              span.className = " text-sm ";
               label.appendChild(img);
               label.appendChild(span);
               appGridFeatures.appendChild(label);
@@ -81,17 +90,20 @@
           });
 
           const checkboxGrid = document.getElementById("checkboxGrid");
+
           // Loop through the data and generate checkboxes dynamically
           data.forEach((item) => {
             if (item.visible) {
               const label = document.createElement("label");
 
+              const upper_div = document.createElement("div");
+
               if (item.enabled == true) {
-                label.className =
-                  "hover:bg-gray-300 bg-gray-100  gap-4 justify-between btn btn-primary p-4 rounded-lg shdow-md border flex items-center space-x-2";
+                upper_div.className =
+                  "rounded-lg  p-1  rounded-lg shadow-md hover:bg-gray-300 bg-gray-100  justify-between btn btn-primary px-2 py-1 rounded-lg shdow-md  flex items-center ";
               } else {
-                label.className =
-                  "bg-gray-100 opacity-50 gap-4 justify-between btn btn-primary p-4 rounded-lg shdow-md border flex items-center space-x-2";
+                upper_div.className =
+                  "rounded-lg  p-1  rounded-lg shadow-md bg-gray-100 opacity-50  justify-between btn btn-primary px-2 py-1 rounded-lg shdow-md  flex items-center ";
               }
 
               const img = document.createElement("img");
@@ -99,8 +111,7 @@
               img.src = item.icon; // Path to your image
               img.alt = "Description of the image";
               img.id = item.name;
-              img.className =
-                " w-10 rounded-lg border-2 border-gray-200 p-1 bg-white  hover:opacity-100";
+              img.className = " w-10 rounded-lg  p-1 bg-white  ";
 
               const checkbox = document.createElement("input");
 
@@ -126,12 +137,23 @@
                 }
               };
 
-              const span = document.createElement("span");
+              const span = document.createElement("div");
               span.innerText = item.title;
+
+              const description_span = document.createElement("div");
+              description_span.innerText = item.description;
+
+              const lower_div = document.createElement("div");
+              lower_div.className = " bg-gray-100 h-auto rounded-lg p-1";
+              lower_div.appendChild(description_span);
+
               label.appendChild(img);
               label.appendChild(span);
               label.appendChild(checkbox);
-              checkboxGrid.appendChild(label);
+
+              upper_div.appendChild(label);
+              upper_div.appendChild(lower_div);
+              checkboxGrid.appendChild(upper_div);
             }
           });
         })

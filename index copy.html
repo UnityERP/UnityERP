@@ -799,7 +799,7 @@
     <footer class="bg-gray-800 text-white py-16 rounded-t-lg">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 px-8">
         <!-- Footer Container -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-y-8">
           <!-- Each Footer Column -->
           <div class="footer-column">
             <ul>
@@ -813,17 +813,8 @@
             </ul>
           </div>
 
-          <div class="footer-column">
-            <ul>
-              <!-- JavaScript will populate this section -->
-            </ul>
-          </div>
 
-          <div class="footer-column">
-            <ul>
-              <!-- JavaScript will populate this section -->
-            </ul>
-          </div>
+          
         </div>
         <!-- /Footer Container -->
       </div>
@@ -853,9 +844,9 @@
 
         const icon = document.createElement("img");
         // icon.src = app.icon;
-        icon.src = "app.png";
+        icon.src = app.icon;
         icon.alt = `${app.title} Icon`;
-        icon.className = "h-20 w-20 object-cover";
+        icon.className = "p-2 h-20 w-20 object-cover";
 
         const content = document.createElement("div");
         content.className = "p-4";
@@ -897,15 +888,21 @@
           titleContainer.classList.add("flex", "items-center", "mb-4"); // Flex container to align items horizontally
 
           const icon = document.createElement("img");
-          icon.src = "app.png";
+          icon.src = app.icon;
           icon.alt = app.title + " Icon";
-          icon.classList.add("w-6", "h-6", "mr-2");
+          icon.classList.add("rounded-lg","w-6", "h-6", "mr-2");
           titleContainer.appendChild(icon); // Append the icon first
 
           const title = document.createElement("h3");
           title.textContent = app.title;
           title.classList.add("text-lg", "font-semibold");
+
+          const title2 = document.createElement("p");
+          title2.textContent = "(" + app.status+")";
+          title2.classList.add("text-sm");
+
           titleContainer.appendChild(title); // Append the title after the icon
+          titleContainer.appendChild(title2); // Append the title after the icon
 
           const ul = document.createElement("ul");
           const li = document.createElement("li");

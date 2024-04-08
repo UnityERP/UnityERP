@@ -1,7 +1,7 @@
 [
   {
     "title": "Windows desktop",
-    "description": "Build professional business websites effortlessly.",
+    "description": "Windows desktop client",
     "icon": "windows.png",
     "type": "Interface",
     "category": "Interface",
@@ -17,7 +17,7 @@
   },
   {
     "title": "Android App",
-    "description": "Build professional business websites effortlessly.",
+    "description": "Android client",
     "icon": "android.png",
     "type": "Interface",
     "category": "Interface",
@@ -33,7 +33,7 @@
   },
   {
     "title": "Local Access",
-    "description": "Build professional business websites effortlessly.",
+    "description": "Local Network Access to your data  ",
     "icon": "network.png",
     "type": "feature",
     "category": "feature",
@@ -50,7 +50,7 @@
 
   {
     "title": "Public Access",
-    "description": "Build professional business websites effortlessly.",
+    "description": "World-Wide Access to your data using your Static IP  ",
     "icon": "public.png",
     "type": "feature",
     "category": "feature",
@@ -291,7 +291,7 @@
   },
   {
     "title": "Whatsapp",
-    "description": "manage employee information and streamline HR processes.",
+    "description": "Manage whatsapp messages with ease.",
     "icon": "whatsapp.png",
     "type": "subscription",
     "category": "subscription",
@@ -307,7 +307,7 @@
   },
   {
     "title": "ChatGPT",
-    "description": "manage employee information and streamline HR processes.",
+    "description": "Use the power of ChatGPT to enhance your productivity.",
     "icon": "chatgpt.png",
     "type": "subscription",
     "category": "subscription",
@@ -323,7 +323,7 @@
   },
   {
     "title": "Custom Name/Logo",
-    "description": "manage employee information and streamline HR processes.",
+    "description": "Customize the name and logo of to represent more your company",
     "icon": "custom.png",
     "type": "app",
     "category": "customization",
