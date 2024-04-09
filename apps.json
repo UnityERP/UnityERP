@@ -1,6 +1,6 @@
 [
   {
-    "title": "Windows desktop",
+    "title": "Desktop",
     "description": "Windows desktop client",
     "icon": "windows.png",
     "type": "Interface",
@@ -16,7 +16,7 @@
     "required": true
   },
   {
-    "title": "Android App",
+    "title": "Android",
     "description": "Android client",
     "icon": "android.png",
     "type": "Interface",
